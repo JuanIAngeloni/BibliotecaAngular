@@ -1,0 +1,15 @@
+<body>
+
+
+    <app-loading *ngIf="!isHidden"></app-loading>
+
+    <app-principal *ngIf="isHidden"></app-principal>
+
+    <section id="formLibros">
+        <app-carga-de-libros></app-carga-de-libros>
+    </section>
+    <section id="cards">
+    <app-book-card *ngIf="isHidden"></app-book-card>
+    <!-- <app-opacity></app-opacity> -->
+    </section>
+</body>
